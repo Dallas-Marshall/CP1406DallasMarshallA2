@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Petite Treats - Sign Up</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="form_verification.js"></script>
+</head>
+<body>
+
+<!--Header - Logo, Navigation & Socials-->
+<div class="top_bar">
+
+    <div class="top_bar_column logo"><a href="index.html"><h1>Petite Treats</h1></a></div>
+
+    <div class="top_bar_column navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="specials.html">Specials</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="sign_up.html" class="active">Sign Up</a>
+    </div>
+
+    <div class="top_bar_column social_icons">
+        <a href="https://www.facebook.com/"><img src="petite_treats_images/facebook_icon35x35.png"
+                                                 alt="https://www.iconfinder.com/icons/4362964/facebook_fb_logo_social_media_icon"></a>
+        <a href="https://www.twitter.com/"><img src="petite_treats_images/twitter_icon35x35.jpg"
+                                                alt="http://clipart-library.com/clip-art/twitter-bird-transparent-background-15.htm"></a>
+        <a href="https://www.instagram.com/"><img src="petite_treats_images/instagram_icon35x35.png"
+                                                  alt="https://www.stickpng.com/img/icons-logos-emojis/tech-companies/instagram-logo"></a>
+    </div>
+</div>
+
+<hr id="header_break">
+
+<!--Newsletter Signup Form-->
+<form id="form" action="form_confirmation_page.php" method="POST">
+
+    <h1>Personal Details</h1>
+    <!--Text Inputs-->
+    <div>
+        <label id="first_name_label" for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name">
+    </div>
+    <div>
+        <label id="last_name_label" for="last_name">Last name:</label>
+        <input type="text" id="last_name" name="last_name">
+    </div>
+    <div>
+        <label id="email_label" for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <!--Birthday Drop Downs-->
+    <div>
+        <label id="birthday_drop_down_label">Please enter your birthday
+            <select name="birthday_day_drop_down" id="birthday_day_drop_down">
+                <option>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            <select name="birthday_month_drop_down" id="birthday_month_drop_down">
+                <option>Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+        </label>
+    </div>
+
+    <h1>Favourite Products</h1>
+    <!--Product Checkboxes-->
+    <div class="selections">
+        <label class="checkbox" id="product_checkboxes_label">Select your favourite products:</label><br>
+
+        <input type="checkbox" id="donuts_checkbox" value="Donuts" name="products[]">
+        <label id="donuts_checkbox_label" for="donuts_checkbox">Donuts</label><br>
+
+        <input type="checkbox" id="vanilla_slice_checkbox" value="Vanilla Slice" name="products[]">
+        <label id="vanilla_slice_checkbox_label" for="vanilla_slice_checkbox">Vanilla Slice</label><br>
+
+        <input type="checkbox" id="randy_tart_checkbox" value="Randy Tart" name="products[]">
+        <label id="randy_tart_checkbox_label" for="randy_tart_checkbox">Randy Tart</label><br>
+
+        <input type="checkbox" id="custard_tart_checkbox" value="Custard Tart" name="products[]">
+        <label id="custard_tart_checkbox_label" for="custard_tart_checkbox">Custard Tart</label><br>
+
+        <input type="checkbox" id="raspberry_cheesecake_checkbox" value="Raspberry Cheesecake" name="products[]">
+        <label id="raspberry_cheesecake_checkbox_label" for="raspberry_cheesecake_checkbox">Raspberry Cheesecake</label><br>
+
+        <input type="checkbox" id="apple_cake_slice_checkbox" value="Apple Cake Slice" name="products[]">
+        <label id="apple_cake_slice_checkbox_label" for="apple_cake_slice_checkbox">Apple Cake Slice</label><br>
+    </div>
+
+    <!--T&C-->
+    <div class="selections">
+        <input type="radio" id="mailing_list_checkbox">
+        <label id="mailing_list_checkbox_label" for="mailing_list_checkbox">By ticking this box you agree to be added to
+            Petite Treats mailing list</label>
+    </div>
+
+    <!--Submit Button-->
+    <input class="attractive" type="submit" value="Submit" name="submit">
+</form>
+
+<!--Footer - Business Contacts & Navigation-->
+<div class="footer">
+    <p>Contacts: 0455 5555 555 | Catering: 0433 3333 333 | Address: 123 Prize Lane, Kirwan,<a href="index.html">Home</a>
+        <a href="products.html">Menu</a> <a href="specials.html">Specials</a> <a href="contact_us.html">About Us</a></p>
+</div>
+</body>
+</html>

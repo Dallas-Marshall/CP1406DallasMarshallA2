@@ -1,0 +1,301 @@
+body {
+    margin: 5px 5% 50px;
+    font-family: "Bookman Old Style", serif;
+    color: #413A32;
+}
+
+
+/*since navigation is shorter (height wise) than the rest of the header, must be set further from the top*/
+.navigation {
+    padding-top: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+.navigation a {
+    color: #413A32;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    padding: 0 5%;
+    transition-duration: 0.5s;
+}
+
+.social_icons {
+    width: 25%;
+}
+
+.social_icons a {
+    float: right;
+    padding: 0;
+    transition-duration: 0.5s;
+}
+
+.top_bar {
+    min-height: 45px;
+}
+
+.social_icons a:hover {
+    background-color: #b29d89;
+    border-radius: 5px;
+}
+
+.logo a:hover {
+    background-color: #b29d89;
+    border-radius: 15px;
+}
+
+.navigation a:hover {
+    background-color: #b29d89;
+    border-radius: 15px;
+}
+
+a.active {
+    background-color: #D1CABA;
+    border-radius: 15px;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo a {
+    text-decoration: none;
+    float: left;
+    transition-duration: 0.5s;
+}
+
+.logo h1 {
+    font-size: 40px;
+    margin: -8px 0 0;
+    color: #006400;
+    padding: 5px;
+}
+
+.top_bar_column {
+    float: left;
+}
+
+#header_break {
+    border: 1px solid #394648;
+    margin-bottom: 0;
+}
+
+.background_image {
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cabinet {
+    background-image: url("petite_treats_images/bakery_display.jpg");
+    /*https://www.pexels.com/photo/donuts-and-bagel-display-205961/*/
+    background-position: center;
+}
+
+.specials_signup_column {
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.specials_signup_column h1 {
+    font-size: 40px;
+    color: #413A32;
+    margin: 0;
+}
+
+.reviews_column {
+    width: 66.66%;
+    float: right;
+    text-align: center;
+}
+
+.reviews_column p {
+    font-size: large;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footer a {
+    color: #413A32;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    margin: 0;
+}
+
+.footer a:hover {
+    background-color: #b29d89;
+    border-radius: 15px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #D1CABA;
+    color: #413A32;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 350px;
+}
+
+.column a {
+    text-decoration: none;
+    color: #413A32;
+}
+
+.column a:hover {
+    background-color: #006400;
+}
+
+.column a:visited {
+    color: #413A32;
+}
+
+.specials_signup {
+    text-align: center;
+}
+
+.specials_signup input {
+    margin-bottom: 5px;
+}
+
+.attractive {
+    width: 50%;
+    font-size: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #006400;
+    transition-duration: 0.5s;
+}
+
+.attractive:hover {
+    background-color: white;
+    border: 1px solid #006400;
+}
+
+.breadcrumb {
+    padding: 5px 15px;
+    list-style: none;
+    background-color: #D1CABA;
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb li + li:before {
+    padding: 8px;
+    color: #006400;
+    content: "/ ";
+}
+
+.breadcrumb li a {
+    color: #413A32;
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+    color: #006400;
+    text-decoration: underline;
+}
+
+.general_style h1 {
+    text-align: center;
+    margin: 0;
+    color: #006400;
+}
+
+.general_style p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product_large_display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#baker {
+    background-image: url("petite_treats_images/artisan_baker.jpg");
+    background-position: top;
+    /*http://blog.empirebake.com/index.php/best-equipment-for-artisan-bakers/*/
+}
+
+.centre_text {
+    text-align: center;
+}
+
+.stand_out h1 {
+    text-align: center;
+    margin: 0;
+    color: #006400;
+}
+
+.form_outputs {
+    font-size: xx-large;
+}
+
+form {
+    margin-left: 35%;
+}
+
+label {
+    width: 240px;
+    display: inline-block;
+    text-align: right;
+}
+
+input {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+}
+
+
+select {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+
+.selections label {
+    text-align: left;
+    width: 600px;
+    height: 16px;
+}
+
+.selections {
+    margin-left: 32px;
+}
+
+.contact_details {
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 0;
+}
